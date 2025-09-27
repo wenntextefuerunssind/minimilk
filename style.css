@@ -1,1 +1,57 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
 
+#firstLetter{
+    font-size: clamp(8rem, 40vw, 30rem);
+    font-weight: bold;
+    line-height: 0.9;
+    float: left;
+    margin-right: 8px;
+}
+
+#end{
+    font-size: clamp(2rem, 10vw, 8rem);
+    font-weight: bold;
+    white-space: nowrap;
+    line-height: 2.2;
+}
+
+.text{
+    font-size: clamp(0.5rem, 4vw, 3rem);
+    padding-right: 10%;
+    padding-left: 10%;
+    letter-spacing: 0.02em;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.2rem, 4vw, 8rem);
+}
+
+.email{
+    text-decoration: none;
+    padding: 1%;
+    border: black 2px solid;
+    box-shadow: 1px 2px 8px;
+    color: black;
+}
+
+.email:hover{
+    background-color: #CCC;
+}
+
+@media screen and (min-width: 650px) {
+    .text{
+        margin-top: -50px;
+    } 
+}
+
+@media screen and (max-width: 650px) {
+    .text{
+        margin-top: -30px;
+    } 
+}
